@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".QrcodeGeneration">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/companyname"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:hint="Company name"
+        android:inputType="text"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/productname"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:gravity="center"
+        android:hint="Product name"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/numberofcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Number of Code"
+        android:inputType="number"
+        android:selectAllOnFocus="false" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/product_price"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="Price"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/product_weight"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Weight"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/product_unite"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="unit "
+            android:inputType="text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/start_dateId"
+            android:text="Select Date"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/produce_date"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="Produce date"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/end_dateId"
+            android:text="Select Date"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/end_date"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="Expired Date"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/codegenerat"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Generate Code" />
+
+    <Button
+        android:id="@+id/gonextpage"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Products" />
+
+
+</LinearLayout>

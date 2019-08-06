@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        app:showAsAction="never"/>
+
+    <item android:title="Create profile"
+        android:id="@+id/sign_up"
+        app:showAsAction="never"/>
+
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        app:showAsAction="never"/>
+
+    <item android:title="SignIn"
+        android:id="@+id/signin"
+        app:showAsAction="never"/>
+
+    <item android:title="Create QR Code"
+        android:id="@+id/qrgenerate"
+        app:showAsAction="never"/>
+</menu>
